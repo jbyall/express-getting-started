@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Express Getting Started</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,7 +12,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="/">Express Getting Started</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 {{#each navLinks}}
@@ -27,6 +27,16 @@
 
     <div class="container body-content">
         <h2>{{title}}</h2>
+        <table class="table">
+            <tr>
+                <th>Fruit</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+            </tr>
+        </table>
     </div>
 
 </body>
